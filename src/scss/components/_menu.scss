@@ -1,0 +1,25 @@
+.menu {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 280px;
+    height: 100vh;
+    background: black;
+    z-index: 2;
+    overflow: hidden;
+    @include transition-ease;
+
+    &__links {
+        height: 30%;
+        justify-content: space-around;
+
+        &__link {
+            width: 100%;
+
+        }
+    }
+}
+
+.menu-disabled {
+    left: -280px;
+}

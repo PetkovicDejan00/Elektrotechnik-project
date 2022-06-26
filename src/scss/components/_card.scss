@@ -1,0 +1,53 @@
+@use "sass:math";
+
+.card {
+    border-radius: math.div($base-border-radius, 2);
+    @include transition-ease;
+    border: $base-border-thickness solid #fff;
+    position: relative;
+    text-align: center;
+    box-sizing: border-box;
+
+    img {
+        z-index: 1;
+        position: relative;
+
+        &::after {
+            content: "";
+            width: 120px;
+            height: 120px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-color: $secondary;
+            border-radius: 50%;
+            // z-index: 2;
+        }
+    }
+
+    &:hover {
+        border: $base-border-thickness solid $primary;
+    }
+}
+
+.referenzen-cards {
+
+    &__card {
+        position: relative;
+        text-align: center;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+
+        span {
+            position: absolute;
+            left: 15px;
+            top: 15px;
+        }
+
+        h4 {
+            min-height: 70px;
+        }
+    }
+}

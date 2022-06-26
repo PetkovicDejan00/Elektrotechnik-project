@@ -1,0 +1,19 @@
+@use 'sass:math';
+
+.card-service {
+    border-radius: math.div($base-border-radius, 3);
+    @include transition-ease;
+    box-sizing: border-box;
+    border: $base-border-thickness solid $stroke-gray;
+    border-radius: 10px;
+    margin-right: $base-margin;
+
+    &:hover {
+        border: $base-border-thickness solid $primary;
+    }
+
+    img {
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+    }
+}

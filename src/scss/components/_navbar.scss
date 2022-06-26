@@ -1,0 +1,32 @@
+%flex-layout {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-sizing: border-box;
+}
+.main-section__header__navbar {
+    @extend %flex-layout;
+    padding: $base-padding $base-padding;
+    background-color: transparent;
+    height: 80px;
+
+    &__title {
+        font-size: $font-size-sm;
+    }
+
+    .container {
+        @extend %flex-layout;
+    }
+
+    &__links {
+        margin-left: auto;
+    }
+}
+@each $key,
+$val in $colors {
+    .navbar-#{$key} {
+        @extend .main-section__header__navbar;
+        background-color: $val;
+    }
+}

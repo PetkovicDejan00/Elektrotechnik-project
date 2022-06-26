@@ -1,0 +1,26 @@
+// variables & functions
+@import 'abstracts/variables';
+@import 'abstracts/utilities';
+
+// base
+@import 'base/base';
+
+// layout
+@import 'layout/breakpoints';
+@import 'layout/grid';
+
+// colors
+@import 'colors/colors';
+
+// components (button, card, navbar)
+@import 'components/card';
+@import 'components/button';
+@import 'components/menu';
+@import 'components/navbar';
+@import 'components/burger';
+@import 'components/swiper';
+@import 'components/service-card';
+@import 'components/pseudo-classes';
+
+// responsive
+@import 'responsive/responsive';

@@ -1,0 +1,61 @@
+.menu-btn {
+    position: absolute;
+    z-index: 1;
+    right: 0.3rem;
+    top: 1rem;
+    height: 20px;
+    width: 28px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    @include transition-ease;
+
+    &__burger {
+        position: absolute;
+        right: 0.85rem;
+        top: 1.25rem;
+        width: 22px;
+        height: 3px;
+        background: #fff;
+        border-radius: $base-border-radius;
+        @include transition-ease;
+
+        &::before {
+            content: '';
+            position: absolute;
+            top: -8px;
+            width: 22px;
+            height: 3px;
+            background-color: #fff;
+            border-radius: $base-border-radius;
+            @include transition-ease;
+        }
+
+        &::after {
+            content: '';
+            position: absolute;
+            top: 8px;
+            width: 22px;
+            height: 3px;
+            background-color: #fff;
+            border-radius: $base-border-radius;
+            @include transition-ease;
+        }
+
+        &.open {
+            transform: rotate(720deg);
+            background: transparent;
+
+            &::before {
+                transform: rotate(45deg) translate(5px, 8px);
+                width: 25px;
+            }
+
+            &::after {
+                transform: rotate(-45deg) translate(3px, -7px);
+                width: 25px;
+            }
+        }
+
+    }
+}

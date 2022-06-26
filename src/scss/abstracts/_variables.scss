@@ -1,0 +1,54 @@
+// theme solors 
+$primary: #0051F9;
+$secondary: #EBF1FF;
+$dark-blue: #232A36;
+$footer-color: #1E2533;
+$paragraph-color: #4b4b4b;
+$dark-gray: #4B4B4B;
+$light-gray: #717171;
+$stroke-gray:#D2D2D2;
+$error: #d32752;
+$info: #f6c31c;
+
+//color palette
+$colors: ("primary": $primary,
+    "secondary": $secondary,
+    "dark-blue": $dark-blue,
+    "footer-color": $footer-color,
+    "paragraph-color": $paragraph-color,
+    "dark-gray": $dark-gray,
+    "light-gray": $light-gray,
+    "stroke-gray": $stroke-gray,
+    "error": $error,
+    "info": $info,
+    "blue": #1919e6,
+    "red": #e61919,
+    "yellow": #e6e619,
+    "green": #19e635,
+    "orange": #ffa600,
+    "purple": #9900ff,
+    "gray": #808080,
+    "black": black,
+    "white": white);
+
+
+//spacing
+$base-padding: 0.75rem;
+$base-margin: 0.7rem;
+$margin-center: 0 auto;
+$base-font-weight: 400px;
+
+//borders 
+$base-border-thickness: 1px;
+$base-border-radius: 20px;
+
+
+//box-shadow 
+$base-box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.1);
+
+//font-sizes
+$base-font-size: 1rem;
+$font-size-sm: $base-font-size * 0.85;
+$font-size-lg: $base-font-size * 1.5;
+$font-size-xl: $base-font-size * 2;
+$font-size-xxl: $base-font-size * 3;
