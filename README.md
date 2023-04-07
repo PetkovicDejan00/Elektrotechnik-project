@@ -1,5 +1,6 @@
-# Elektrotecknik-project
-Elektrotecknik website project (practice)
+# Elektrotechnik-project
+
+Static website created through practicing with usage of html, javascript, as well as scss
 
 ## Running instructions
 
